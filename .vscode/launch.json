@@ -1,0 +1,84 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "main",
+      "request": "launch",
+      "mainClass": "j.main",
+      "projectName": "debuger-for-vscode_6ee41582"
+    },
+    {
+      "type": "java",
+      "name": "main",
+      "request": "launch",
+      "mainClass": "java.main",
+      "projectName": "debuger-for-vscode_6ee41582"
+    },
+    {
+      "name": "Dart",
+      "type": "dart",
+      "request": "launch",
+      "program": "dart/main.dart"
+    },
+    {
+      "type": "java",
+      "name": "java",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "name": "javascript",
+      "program": "${workspaceFolder}/main.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "golang",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/golang/main.go"
+    },
+    {
+      "name": "Python",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/python/main.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "rust",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=rust",
+          "--package=rust",
+          "--manifest-path=rust/Cargo.toml"
+        ],
+        "filter": {
+          "name": "rust",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}/rust"
+    },
+    {
+      "name": "C/C++: gcc ",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: gcc build active file"
+    }
+  ]
+}
