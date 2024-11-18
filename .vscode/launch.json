@@ -2,20 +2,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "main",
-      "request": "launch",
-      "mainClass": "j.main",
-      "projectName": "debuger-for-vscode_6ee41582"
-    },
-    {
-      "type": "java",
-      "name": "main",
-      "request": "launch",
-      "mainClass": "java.main",
-      "projectName": "debuger-for-vscode_6ee41582"
-    },
-    {
       "name": "Dart",
       "type": "dart",
       "request": "launch",
